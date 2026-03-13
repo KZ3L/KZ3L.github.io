@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashem Khazaleh | CYS Portfolio</title>
+    <style>
+        :root {
+            --primary-blue: #00d2ff;
+            --dark-bg: #0d1117;
+            --card-bg: #161b22;
+            --accent-red: #f85149;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            color: #c9d1d9;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Header "The Cyber Shield" */
+        header {
+            background: linear-gradient(135deg, #041033 0%, #001220 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-blue);
+            position: relative;
+        }
+
+        header img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-blue);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        nav {
+            background-color: rgba(22, 27, 34, 0.95);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #30363d;
+        }
+
+        nav a {
+            color: #8b949e;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-blue);
+            text-shadow: 0 0 8px var(--primary-blue);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid #30363d;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-left: 4px solid var(--accent-red);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #0d1117;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #30363d;
+        }
+
+        table th {
+            background-color: #1f2937;
+            color: var(--primary-blue);
+        }
+
+        table tr:hover {
+            background-color: #21262d;
+        }
+
+        /* Skills List */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        ul li {
+            background: #21262d;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #0d1117;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+
+        a { color: var(--primary-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="mine photo .jpg" alt="Hashem Khazaleh">
+        <h1>Hashem Khazaleh</h1>
+        <p style="color: var(--primary-blue); font-weight: bold;">Cybersecurity Specialist in the Making</p>
+        <p>3rd Year Student @ JUST</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact-info.html">Contact Me</a>
+    </nav>
+
+    <div class="container">
+        <h2><span style="color: var(--accent-red);">></span> Key Soft Skills</h2>
+        <ul>
+            <li>Teamwork</li>
+            <li>Analytical Thinking</li>
+            <li>Problem-solving</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
+            <li>Leadership</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2><span style="color: var(--accent-red);">></span> Technical Stack</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool / Language</th>
+                    <th>Official Resource</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td><a href="https://www.python.org" target="_blank">python.org</a></td>
+                </tr>
+                <tr>
+                    <td>Wireshark</td>
+                    <td><a href="https://www.wireshark.org" target="_blank">wireshark.org</a></td>
+                </tr>
+                <tr>
+                    <td>Metasploit</td>
+                    <td><a href="https://www.metasploit.com" target="_blank">metasploit.com</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2><span style="color: var(--accent-red);">></span> Mission & Vision 2030</h2>
+        <p>
+            In four years, I envision myself as a <strong>Professional Penetration Tester</strong>, serving as a resilient shield for my nation’s digital assets and critical infrastructure. My mission is to proactively identify and neutralize vulnerabilities, ensuring our national capabilities remain secure against any intrusion. 
+        </p>
+        <p>
+            By pursuing postgraduate studies in <strong>Cloud Security</strong> and continuous professional development, I aim to combine technical excellence with a noble purpose—protecting my country while building a prosperous future.
+        </p>
+    </div>
+
+    <footer>
+        <p>Securing the future, one packet at a time.</p>
+        <p>Email: <a href="mailto:hsalkhazaleh23@cit.just.edu.jo">hsalkhazaleh23@cit.just.edu.jo</a></p>
+    </footer>
+
+</body>
+</html>

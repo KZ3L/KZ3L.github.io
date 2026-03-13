@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact KZ3L | Secure Channel</title>
+    <style>
+        :root {
+            --primary-blue: #00d2ff;
+            --dark-bg: #0d1117;
+            --card-bg: #161b22;
+            --accent-red: #f85149;
+            --text-gray: #c9d1d9;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            color: var(--text-gray);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: rgba(22, 27, 34, 0.95);
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #30363d;
+        }
+
+        nav a {
+            color: #8b949e;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-blue);
+            text-shadow: 0 0 8px var(--primary-blue);
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 450px;
+            margin: auto;
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #30363d;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            box-sizing: border-box; /* عشان الـ padding ما يخرب العرض */
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(248, 81, 73, 0.3);
+            filter: brightness(1.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var country = document.getElementById("country").value;
+            var comments = document.getElementById("comments").value;
+
+            if (name.trim() == "" || email.trim() == "" || country.trim() == "" || comments.trim() == "") {
+                alert("⚠️ System Access Denied: All fields must be filled!");
+                return false;
+            } else {
+                alert("✅ Message Encrypted & Sent Successfully!");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact-info.html">Contact Me</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Secure Contact</h2>
+        <form onsubmit="return validateForm()">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="email@example.com">
+
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Your location">
+
+            <label for="comments">Message / Comments</label>
+            <textarea id="comments" placeholder="Type your secure message here..."></textarea>
+
+            <button type="submit">Initialize Transmission</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2026 KZ3L | End-to-End Encrypted Thoughts
+    </footer>
+
+</body>
+</html>
